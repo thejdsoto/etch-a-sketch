@@ -1,0 +1,125 @@
+html, body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    padding: 4px;
+    background-color: #71C9CE;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4px;
+    background-color: #CBF1F5;
+}
+
+.left, .right {
+    width: 300px;
+}
+
+.palette {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px;
+    border: 1px solid;
+    border-radius: 25px;
+    background-color: #e3fdfd;
+}
+
+.palette .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.palette .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#black {
+    background-color: black;
+}
+
+#red {
+    background-color: red;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#green {
+    background-color: green;
+}
+
+#cyan {
+    background-color: cyan;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#magenta {
+    background-color: magenta;
+}
+
+#lavender {
+    background-color: lavender;
+}
+
+#gray {
+    background-color: gray;
+}
+
+#purple {
+    background-color: purple;
+}
+
+.color {
+    border: 0.5px solid;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin: 16px 4px;
+}
+
+.canvas {
+    height: 800px;
+    width: 800px;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button-right {
+    margin: 32px;
+    padding: 16px;
+    width: 150px;
+    border-radius: 50px;
+}
+
+footer {
+    text-align: center;
+    background-color: #71C9CE;
+}
