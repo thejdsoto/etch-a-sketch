@@ -1,6 +1,7 @@
 const container = document.querySelector('.container');
 const btn = document.querySelector('button');
 let dimension;
+let opacity = 0;
 
 btn.addEventListener("click", () => {
     dimension = prompt("Please enter value for number of squares (max. 100)");
@@ -27,7 +28,11 @@ btn.addEventListener("click", () => {
 
         //shade boxes
         for (let i=0; i<cell.length; i++) {
-            cell[i].addEventListener("mouseover", () => {cell[i].style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)})`});
+            cell[i].addEventListener("mouseover", () => {
+                cell[i].style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)} ${Math.floor(Math.random() * 255)} ${Math.floor(Math.random() * 255)} / ${opacity}%)`;
+                opacity = opacity + 10;
+            });
+            
         }
     } else {
         alert("Try again! Value must be 1 to 100 only");
