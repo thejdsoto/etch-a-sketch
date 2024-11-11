@@ -5,7 +5,7 @@ let dimension;
 btn.addEventListener("click", () => {
     dimension = prompt("Please enter value for number of squares (max. 100)");
 
-    if (dimension != null && dimension <= 100) {
+    if (dimension != null && dimension <= 100 && dimension >= 0) {
         container.textContent = ''; //clears the boxes
 
         //generate boxes
@@ -29,6 +29,8 @@ btn.addEventListener("click", () => {
         for (let i=0; i<cell.length; i++) {
             cell[i].addEventListener("mouseover", () => {cell[i].style.backgroundColor = "black"});
         }
+    } else {
+        alert("Try again! Value must be 1 to 100 only");
     }
 });
 
