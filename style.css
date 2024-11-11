@@ -7,8 +7,8 @@ body {
 
 .container {
     display: flex;
-    width: 960px;
-    height: 960px;
+    width: 880px;
+    height: 880px;
 }
 
 .container, .column, .cell {

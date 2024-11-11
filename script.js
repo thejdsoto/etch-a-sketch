@@ -16,8 +16,8 @@ btn.addEventListener("click", () => {
             for (let j=0; j<dimension; j++) {
                 let cell = document.createElement('div');
                 cell.setAttribute("class", "cell");
-                cell.style.width = `${960/dimension}px`;
-                cell.style.height = `${960/dimension}px`;
+                cell.style.width = `${880/dimension}px`;
+                cell.style.height = `${880/dimension}px`;
                 cell.style.border = "1px solid gray";
                 column.appendChild(cell);
             }
