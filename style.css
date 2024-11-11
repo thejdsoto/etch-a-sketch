@@ -2,10 +2,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
+
 .container {
     display: flex;
     width: 960px;
     height: 960px;
+}
+
+.container, .column, .cell {
+    box-sizing: border-box;
 }
