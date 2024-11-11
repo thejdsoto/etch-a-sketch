@@ -18,7 +18,7 @@ btn.addEventListener("click", () => {
                 cell.setAttribute("class", "cell");
                 cell.style.width = `${960/dimension}px`;
                 cell.style.height = `${960/dimension}px`;
-                cell.style.border = "1px dashed gray";
+                cell.style.border = "1px solid gray";
                 column.appendChild(cell);
             }
         } 
