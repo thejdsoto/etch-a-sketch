@@ -6,6 +6,9 @@ btn.addEventListener("click", () => {
     dimension = prompt("Please enter value for number of squares (max. 100)");
 
     if (dimension != null && dimension <= 100) {
+        container.textContent = ''; //clears the boxes
+
+        //generate boxes
         for (let i=0; i<dimension; i++) {
             let column = document.createElement('div');
             column.setAttribute("class", "column");
@@ -22,6 +25,7 @@ btn.addEventListener("click", () => {
     
         const cell = document.querySelectorAll('.cell');
 
+        //shade boxes
         for (let i=0; i<cell.length; i++) {
             cell[i].addEventListener("mouseover", () => {cell[i].style.backgroundColor = "black"});
         }
