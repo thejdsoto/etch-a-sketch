@@ -27,7 +27,7 @@ btn.addEventListener("click", () => {
 
         //shade boxes
         for (let i=0; i<cell.length; i++) {
-            cell[i].addEventListener("mouseover", () => {cell[i].style.backgroundColor = "black"});
+            cell[i].addEventListener("mouseover", () => {cell[i].style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)})`});
         }
     } else {
         alert("Try again! Value must be 1 to 100 only");
